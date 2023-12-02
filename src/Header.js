@@ -8,11 +8,13 @@ function Header({props}) {
 
   
   return (
-    <>
-    <div>{name} from {props}</div>
-    <button onClick={()=>{setName("Virat Kohli")
+    <div>
+    <div className='font-bold ml-[645px] '  >{name} from {props}</div>
+    <div className='flex font-bold  flex-col justify-center mt-10'>
+    <button  onClick={()=>{setName("Virat Kohli")
     }}>Change Name</button>
-    </>
+    </div>
+    </div>
     
   )
 }
